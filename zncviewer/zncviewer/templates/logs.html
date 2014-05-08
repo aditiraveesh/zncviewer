@@ -1,0 +1,7 @@
+Logfiles:
+
+{% for filename in filenames %}
+  <p>
+    <a href="{% url 'zncviewer.views.show_log' filename %}">{{ filename }}</a>
+  </p>
+{% endfor %}
